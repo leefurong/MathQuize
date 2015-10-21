@@ -1,0 +1,77 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424242"
+    android:id="@+id/mainView">
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_gravity="left|top" />
+
+        <TextView
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Quize"
+            android:id="@+id/quizeView"
+            android:layout_gravity="left|top"
+            android:textSize="60dp"
+            android:textColor="#ffffff"
+            android:paddingStart="20dp" />
+
+        <EditText
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/answerView"
+            android:layout_gravity="right|top"
+            android:text="Answer"
+            android:textSize="40dp"
+            android:textColor="#ffffff"
+            android:layout_marginRight="20dp"
+            android:paddingEnd="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="意见反馈， 加微信 leefurong"
+            android:id="@+id/textView"
+            android:layout_gravity="right|center_vertical"
+            android:textColor="#aaaaaa"
+            android:paddingEnd="20dp" />
+
+        <Chronometer
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/chronometer"
+            android:layout_gravity="left|center_vertical"
+            android:textColor="#ffffff"
+            android:paddingStart="20dp" />
+    </FrameLayout>
+
+</FrameLayout>
